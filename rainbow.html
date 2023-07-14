@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDKUTY</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 300px;
+        }
+        button{
+            cursor: pointer;
+            background-color: greenyellow ;
+            background-image: linear-gradient(yellow,rgb(73, 191, 73),rgb(70, 197, 209));
+        }
+        
+    </style>
+</head>
+<body>
+    <button>Click Me !</button>
+    <script>
+        const btn=document.querySelector('button');
+        const body=document.querySelector('body');
+        const color=['yellow','darkviolet','arqa','greenyellow','red','orange','blue','black','brown','pink',];
+
+        
+        body.style.backgroundColor='greenyellow';
+        document.addEventListener('click',function(){
+            const colorIndex=parseInt(Math.random()*color.length);
+            body.style.backgroundColor=color[colorIndex];
+        });
+    </script>
+</body>
+</html
